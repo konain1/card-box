@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardbox</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+             background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
+        .card{
+            height: 360px;
+            width: 800px;
+            background-color: beige;
+            border-radius: 10px;
+            display: flex;
+        }
+        .leftbox{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .leftbox > div{
+            margin-top: 25px;
+        }
+        .rightbox{
+            width: 50%;
+            height: 100%;
+        }
+        .rightbox img {
+            width: 100%;
+            height: 100%;
+           border-top-right-radius: 10px;
+           border-bottom-right-radius: 10px;
+
+        }
+        .heading  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+        }
+        .para {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+        }
+        .para p {
+            padding: 10px;
+            font-size: 12px;
+        }
+        .foot {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            padding: 0;
+            overflow: hidden;
+            width: 80%;
+            margin: 0px auto;
+            
+        }
+        .foot h4 {
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            
+            
+        }
+        .foot span {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftbox">
+                <div class="heading">
+                    <h1>Get insight that help your bussiness grow</h1>
+                </div>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione rem labore voluptates similique, nisi ab iste laborum cumque odio modi officiis. Sed quae deserunt omnis dolorum! Doloribus praesentium ipsam iusto modi, a velit, consequuntur nam alias nulla atque, voluptate quos!</p>
+                </div>
+                <div class="foot">
+                    <div class="one">
+                        <h4>10k</h4>
+                        <span>Comments</span>
+                    </div>
+                    <div class="two">
+                        <h4>300</h4>
+                        <span>Paid users</span>
+                    </div>
+                    <div class="three">
+                        <h4>120M</h4>
+                        <span>views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+                <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_1280.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
